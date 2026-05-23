@@ -1,0 +1,28 @@
+# LM Studio Configuration
+llm:
+  provider: "lm_studio"
+  base_url: "http://localhost:1234/v1"
+  # model: "google/gemma-4-e4b"
+  model: "google/gemma-4-e2b"
+  # model: "microsoft/phi-4-mini-reasoning"
+  temperature: 0.7
+  max_tokens: 2048
+
+# Streamlit UI Configuration
+ui:
+  title: "Personal Assistant - Tejbahadur"
+  chat_history_limit: 50
+  sidebar_enabled: true
+
+# Local Storage Paths
+storage:
+  db_path: "data/assistant.db"
+  conversations_path: "data/conversations/"
+  applications_path: "data/applications/"
+  vector_store_path: "data/vector_store/"
+
+# Feature Flags
+features:
+  job_application: true
+  devops_agent: false  # Will enable in future steps
+  personal_agent: false  # Will enable in future steps
